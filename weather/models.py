@@ -5,8 +5,8 @@ from django.conf import settings
 
 
 class City(models.Model):
-    user = models.ForeignKey(settings.AUTH_USER_MODEL,
-                             on_delete=models.PROTECT)
+    # user = models.ForeignKey(settings.AUTH_USER_MODEL,
+    #                          on_delete=models.PROTECT)
     city = models.CharField(max_length=10, null=True, blank=True)
 
     def __str__(self):
